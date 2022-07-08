@@ -1,0 +1,3 @@
+# Приветствие
+
+print('Hello world')
