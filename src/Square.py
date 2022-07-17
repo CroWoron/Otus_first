@@ -1,11 +1,19 @@
 # Класс для квадрата
 
-from Figure import Figure
+from src.Figure import Figure
 
 
 class Square(Figure):
-    def __init__(self, side):
-        super().__init__(side)
-        self.name = 'Square'
-        self.area = side ** 2
-        self.perimeter = 4 * side
+    """Класс квадрата
+
+    Задается одной стороной
+    """
+    name = 'Square'
+
+    @property
+    def area(self):
+        return sum(self.side) ** 2
+
+    @property
+    def perimeter(self):
+        return sum(self.side) * 4
