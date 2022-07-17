@@ -1,3 +1,0 @@
-# Приветствие
-
-print('Hello world')
